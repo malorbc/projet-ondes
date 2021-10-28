@@ -1,0 +1,37 @@
+{
+    "type": "Feature",
+    "properties": {
+        "id": 33189,
+        "adm_lb_nom": "SFR",
+        "sup_id": 544048,
+        "emr_lb_systeme": "GSM 900",
+        "emr_dt": "2018-12-21",
+        "sta_nm_dpt": "090",
+        "code_insee": "90032",
+        "generation": "2G",
+        "date_maj": "2021-09-15",
+        "sta_nm_anfr": "0902700059",
+        "nat_id": 23,
+        "sup_nm_haut": 50,
+        "tpo_id": 30,
+        "adr_lb_lieu": "",
+        "adr_lb_add1": "Gare de triage SNCF de BELFORT",
+        "adr_lb_add2": "",
+        "adr_lb_add3": "",
+        "adr_nm_cp": 90400,
+        "com_cd_insee": "90032",
+        "coordonnees": [
+            6.856944444444,
+            47.624722222222
+        ],
+        "coord": "47\u00b037'29''N 6\u00b051'25''E",
+        "statut": "En service"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            6.856944444444,
+            47.624722222222
+        ]
+    }
+}
