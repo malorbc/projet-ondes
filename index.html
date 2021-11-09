@@ -12,8 +12,18 @@
 </head>
 
 <body>
-    <div id='map' style='width: 100%; height: 800px;'></div>
+    <div class="map-container">
+        <div id='map' style='width:100%; height: 800px;'></div>
+
+    </div>
 </body>
+<style>
+    .map-container {
+        width: 50%;
+        margin: auto;
+        height: calc(100vh - 105px)
+    }
+</style>
 <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoibWFsb21hbG8iLCJhIjoiY2t0dTE3aXMzMGRseTJ2bXJsb3NkYm1raSJ9.33gvyhV7KNPPsLuQv0Le3g';
     const map = new mapboxgl.Map({
@@ -140,7 +150,45 @@
                 // 'fill-extrusion-base': 50
 
             }
-        })
+        });
+
+        map.addSource('earthquakes', {
+            type: 'geojson',
+            // Use a URL for the value for the `data` property.
+            data: 'antennes-belfort.geojson'
+        });
+
+        map.addLayer({
+            'id': 'earthquakes-layer',
+            'type': 'circle',
+            'source': 'earthquakes',
+            'paint': {
+                'circle-radius': 8,
+                'circle-stroke-width': 2,
+                'circle-color': 'blue',
+                'circle-opacity': 0.2,
+                'circle-stroke-color': 'white'
+            }
+        });
+
+        map.on('click', 'earthquakes-layer', (e) => {
+            // Copy coordinates array.
+            const coordinates = e.features[0].geometry.coordinates.slice();
+            const description = e.features[0].properties.adm_lb_nom;
+            // description += e.features[0].properties.adr_lb_add1;
+
+            // Ensure that if the map is zoomed out such that multiple
+            // copies of the feature are visible, the popup appears
+            // over the copy being pointed to.
+            while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+            }
+
+            new mapboxgl.Popup()
+                .setLngLat(coordinates)
+                .setHTML(description)
+                .addTo(map);
+        });
     });
 
 </script>
