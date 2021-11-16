@@ -1,0 +1,63 @@
+{
+	"type": "Feature",
+	"properties": {
+		"SUP_ID": 192548,
+		"STA_NM_ANFR": "400030034",
+		"NAT_ID": 999999999,
+		"COR_NB_DG_LAT": 43,
+		"COR_NB_MN_LAT": 43,
+		"COR_NB_SC_LAT": 26,
+		"COR_CD_NS_LAT": "N",
+		"COR_NB_DG_LON": 1,
+		"COR_NB_MN_LON": 3,
+		"COR_NB_SC_LON": 37,
+		"COR_CD_EW_LON": "W",
+		"LAT": "43° 43' 26'' N",
+		"LON": "1° 3' 37'' W",
+		"SUP_NM_HAUT": 10.0,		//hauteur du support
+		"TPO_ID": null,
+		"ADR_LB_LIEU": null,
+		"ADR_LB_ADD1": "15 r ampere",
+		"ADR_LB_ADD2": null,
+		"ADR_LB_ADD3": null,
+		"ADR_NM_CP": 40100,
+		"COM_CD_INSEE": "40088",
+		"field_22": null
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [ -1.060277777777778, 43.723888888888887 ]
+	}
+}
+{ 
+	"type": "Feature", 
+	"properties": { 
+		"SUP_ID": 192554, 
+		"STA_NM_ANFR": "400030037", 
+		"NAT_ID": 999999999, 
+		"COR_NB_DG_LAT": 43, 
+		"COR_NB_MN_LAT": 56, 
+		"COR_NB_SC_LAT": 49, 
+		"COR_CD_NS_LAT": "N", 
+		"COR_NB_DG_LON": 1, 
+		"COR_NB_MN_LON": 17, 
+		"COR_NB_SC_LON": 58, 
+		"COR_CD_EW_LON": "W", 
+		"LAT": "43° 56' 49'' N", 
+		"LON": "1° 17' 58'' W", 
+		"SUP_NM_HAUT": 30.000000, 
+		"TPO_ID": null, 
+		"ADR_LB_LIEU": null, 
+		"ADR_LB_ADD1": "DRT", 
+		"ADR_LB_ADD2": null, 
+		"ADR_LB_ADD3": null, 
+		"ADR_NM_CP": 40560, 
+		"COM_CD_INSEE": "40326", 
+		"field_22": null 
+	}, 
+	"geometry": { 
+		"type": "Point", 
+		"coordinates": [ -1.299444444444444, 43.946944444444448 ] 
+	} 
+},
+{ "type": "Feature", "properties": { "SUP_ID": 572112, "STA_NM_ANFR": "62290242", "NAT_ID": 38, "COR_NB_DG_LAT": 43, "COR_NB_MN_LAT": 42, "COR_NB_SC_LAT": 28, "COR_CD_NS_LAT": "N", "COR_NB_DG_LON": 7, "COR_NB_MN_LON": 16, "COR_NB_SC_LON": 29, "COR_CD_EW_LON": "E", "LAT": "43° 42' 28'' N", "LON": "7° 16' 29'' E", "SUP_NM_HAUT": 25.000000, "TPO_ID": 9, "ADR_LB_LIEU": null, "ADR_LB_ADD1": "11 Av. de Picardie", "ADR_LB_ADD2": "Rés. Le Mont Rose", "ADR_LB_ADD3": null, "ADR_NM_CP": 6000, "COM_CD_INSEE": "6088", "field_22": null }, "geometry": { "type": "Point", "coordinates": [ 7.274722222222223, 43.707777777777778 ] } },
